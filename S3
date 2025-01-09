@@ -1,0 +1,32 @@
+	1.	Log in to AWS
+Go to aws.amazon.com and sign in.
+	2.	Go to the S3 Dashboard
+Search for S3 in the search bar and open the S3 Dashboard.
+Step 1: Create a Bucket
+3.	Click on “Create Bucket”
+	•	Give your bucket a unique name (e.g., “my-test-bucket-123”).
+	•	Choose the AWS Region closest to you or your users.
+	4.	Set Permissions
+	•	Keep the bucket private by default for security.
+	•	Enable or disable public access as needed (e.g., for public website hosting).
+	5.	Advanced Options (Optional)
+	•	Enable versioning if you want to keep multiple versions of files.
+	•	Set encryption to secure your data (e.g., AES-256).
+	6.	Click “Create Bucket”
+Your bucket is now ready.
+
+Step 2: Add Files to the Bucket
+
+	7.	Open Your New Bucket
+Click on the bucket name to open it.
+	8.	Upload Files
+	•	Click Upload and add files or folders.
+	•	Use the Add files button to select items from your computer.
+	•	Click Upload to store them in the bucket.
+ Step 3: Access or Manage Your Files
+
+	9.	Download or Share Files
+	•	To download, click on a file and choose Download.
+	•	For sharing, make the file public (if allowed) and copy the link.
+	10.	Set Lifecycle Rules (Optional)
+	•	Automate file management, like deleting old files or moving them to cheaper storage.
