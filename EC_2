@@ -1,0 +1,24 @@
+	1.	Log in to AWS
+Go to aws.amazon.com, log in, and search for “EC2.”
+	2.	Start the Setup
+Click Launch Instance to start creating your virtual server.
+	3.	Pick a Template
+Choose a machine template (called an AMI) like Linux, Windows, or Ubuntu.
+	4.	Choose Server Size
+Select how powerful you want your server to be. For small tasks, pick a free-tier option like t2.micro.
+	5.	Configure the Server
+	•	Choose how many servers you need (usually 1).
+	•	Select a network (AWS sets one up for you by default).
+	6.	Add Storage
+Set how much disk space your server needs. You can stick with the default.
+	7.	Label Your Server
+Add a name tag (e.g., “My First Server”) to keep track of it.
+	8.	Set Security Rules
+	•	Allow specific access, like SSH for Linux or RDP for Windows.
+	•	AWS helps you set these easily.
+	9.	Review and Launch
+	•	Double-check your choices and click Launch.
+	•	Download a key file (a .pem file) to securely access your server later.
+	10.	Connect to Your Server
+	•	For Linux: Use an SSH app to connect with the key file.
+	•	For Windows: Use Remote Desktop to log in.
