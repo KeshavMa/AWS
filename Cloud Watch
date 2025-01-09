@@ -1,0 +1,38 @@
+Step 1: Access CloudWatch
+
+	1.	Log in to AWS
+Go to aws.amazon.com and sign in.
+	2.	Go to the CloudWatch Dashboard
+Search for CloudWatch in the AWS search bar and open the service.
+Step 2: Monitor Metrics
+
+	3.	View Metrics
+	•	In the dashboard, go to Metrics to see performance data for your AWS resources (e.g., EC2, S3, RDS).
+	•	Example: Check CPU usage for an EC2 instance.
+	4.	Create a Custom Dashboard
+	•	Click Dashboards and then Create Dashboard.
+	•	Add widgets for the metrics you want to monitor (e.g., CPU, memory, network traffic).
+	•	Save the dashboard for easy access.
+Step 3: Set Up Alarms
+
+	5.	Create an Alarm
+	•	Go to the Alarms section and click Create Alarm.
+	•	Select a metric (e.g., CPU utilization for an EC2 instance).
+	•	Set conditions, like “Trigger an alarm if CPU usage exceeds 80%.
+	6.	Set Notifications
+	•	Add an action to notify you via email, SMS, or SNS when the alarm is triggered.
+	•	You’ll need to verify the notification method (e.g., email).
+	7.	Test the Alarm
+	•	Simulate high resource usage to see if the alarm triggers correctly.
+Step 4: Monitor Logs
+
+	8.	Set Up CloudWatch Logs
+	•	Go to Logs and create a log group.
+	•	Connect your application or server logs (e.g., EC2 or Lambda) to this group.
+	9.	Analyze Logs
+	•	Search or filter logs to debug issues or monitor application performance.
+Step 5: Create Automated Actions
+
+	10.	Use CloudWatch Events (Optional)
+	•	Go to Events and create rules to automate actions.
+	•	Example: Trigger an AWS Lambda function if a specific log entry appears.
