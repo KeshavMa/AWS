@@ -1,0 +1,28 @@
+.	Log in to AWS
+Go to aws.amazon.com, log in, and search for “VPC.”
+	2.	Open the VPC Dashboard
+Click on VPC to enter the dashboard.
+	3.	Start Creating a VPC
+Click on Create VPC to set up your own network.
+	4.	Give Your VPC a Name
+Add a name to easily identify your VPC (e.g., “MyFirstVPC”).
+	5.	Set the IP Range
+	•	Choose a CIDR block (an IP range for your network).
+	•	Use 10.0.0.0/16 as a common choice, which gives you plenty of IP addresses.
+	6.	Choose Additional Options (Optional)
+AWS offers additional features like IPv6 support or tenancy options, but you can stick with the defaults.
+	7.	Create Your VPC
+Click Create VPC to finish the setup.
+	8.	Add Subnets
+	•	Go to Subnets and click Create Subnet.
+	•	Pick your VPC and add smaller networks (e.g., 10.0.1.0/24 for one subnet).
+	•	Add subnets in different regions if needed (e.g., for backups or failover).
+	9.	Set Up an Internet Gateway
+	•	Go to Internet Gateways and click Create Internet Gateway.
+	•	Attach the gateway to your VPC to allow internet access.
+	10.	Add Routing
+	•	Go to Route Tables and click Create Route Table.
+	•	Attach it to your subnets.
+	•	Add a route for internet traffic (point it to the Internet Gateway).
+	11.	Done!
+Your custom VPC is now ready to host servers, databases, and more! 
