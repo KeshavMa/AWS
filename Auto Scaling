@@ -1,0 +1,41 @@
+.	Log in to AWS
+Go to aws.amazon.com and log in.
+	2.	Go to the EC2 Dashboard
+Search for EC2 in the AWS search bar and open the EC2 Dashboard.
+.	Log in to AWS
+Go to aws.amazon.com and log in.
+	2.	Go to the EC2 Dashboard
+Search for EC2 in the AWS search bar and open the EC2 Dashboard.
+Step 2: Create an Auto Scaling Group
+
+	5.	Navigate to Auto Scaling Groups
+	•	In the EC2 dashboard, look for Auto Scaling Groups under the “Auto Scaling” section.
+	•	Click Create Auto Scaling Group.
+	6.	Select a Launch Template
+	•	Choose the launch template you just created.
+	•	Click Next.
+	7.	Set Group Details
+	•	Group Name: Enter a name (e.g., “MyAutoScalingGroup”).
+	•	Network: Choose a VPC and subnets to launch instances.
+	•	Select multiple subnets for high availability.
+	8.	Set Scaling Options
+	•	Desired Capacity: Set the initial number of instances.
+	•	Minimum Instances: Define the minimum number of instances (e.g., 1).
+	•	Maximum Instances: Define the maximum limit (e.g., 5).
+Step 3: Configure Auto Scaling Policies
+
+	9.	Add Scaling Policies (Optional)
+	•	Enable policies to automatically add or remove instances based on conditions.
+	•	Example: Scale up when CPU usage exceeds 75%, and scale down when below 25%.
+	10.	Set Notifications (Optional)
+	•	Configure email or SNS alerts to notify you of scaling events.
+Step 4: Review and Create
+
+	11.	Review Settings
+	•	Check all configurations, including instance details, scaling limits, and policies.
+	•	Click Create Auto Scaling Group.
+Step 5: Test Auto Scaling
+
+	12.	Simulate Load
+	•	Use stress-testing tools to increase the load on your application.
+	•	Watch as Auto Scaling adds or removes instances based on your policies.
