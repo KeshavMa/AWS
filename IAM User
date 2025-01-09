@@ -1,0 +1,32 @@
+Step 1: Access IAM Service
+
+	1.	Log in to AWS
+Go to aws.amazon.com and sign in.
+	2.	Go to the IAM Dashboard
+In the AWS search bar, type IAM and open the IAM Dashboard.
+Step 2: Create an IAM User
+
+	3.	Click on “Users”
+On the left sidebar, click Users and then Add user.
+	4.	Set User Details
+	•	User Name: Enter a username (e.g., “TestUser”).
+	•	Access Type: Choose Programmatic access for API access or AWS Management Console access for web access. You can select both for full access.
+	•	For console access, create a password.
+	5.	Set Permissions
+	•	Attach Policies: Choose predefined policies (e.g., AdministratorAccess or ReadOnlyAccess) or create a custom policy.
+	•	You can also assign the user to a group with permissions or grant permissions individually.
+	6.	Review and Create
+Review the settings and click Create user.
+
+	7.	Download User Credentials
+	•	After the user is created, you will see the Access Key ID and Secret Access Key (if programmatic access is enabled).
+	•	Download the credentials or copy them for future use. You won’t be able to retrieve them again later.
+Step 4: Manage Permissions (Optional)
+
+	8.	Add More Permissions (if needed)
+	•	If you need to add more permissions to a user, go back to Users and select the user.
+	•	Click on Add permissions to attach additional policies or set custom access.
+Step 5: Delete or Disable Users (Optional)
+
+	9.	Disable or Delete User
+	•	If you no longer need a user, you can disable their access or delete them entirely by selecting the user in the IAM Dashboard and clicking Delete User.
