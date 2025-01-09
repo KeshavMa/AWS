@@ -1,0 +1,42 @@
+	1.	Log in to AWS
+Go to aws.amazon.com and log in.
+	2.	Go to the EC2 Dashboard
+Search for EC2 in the AWS search bar and open the EC2 Dashboard.
+Step 1: Launch EC2 Instances (Servers)
+
+	3.	Set Up Target Servers
+	•	Make sure you have two or more EC2 instances running in different availability zones.
+	•	These will act as the servers behind the load balancer.
+	•	Install any required application on these instances.
+Step 2: Create the Load Balancer
+
+	4.	Navigate to Load Balancers
+	•	In the EC2 Dashboard, find Load Balancers under the “Load Balancing” section.
+	•	Click Create Load Balancer.
+	5.	Choose Load Balancer Type
+	•	Select Application Load Balancer (ALB) for web applications.
+	•	For TCP-level traffic, use Network Load Balancer (NLB).
+	6.	Configure the Load Balancer
+	•	Name: Give your load balancer a name (e.g., “MyLoadBalancer”).
+	•	Scheme: Choose “Internet-facing” for public access or “Internal” for private.
+	•	Listeners: Keep the default settings (e.g., HTTP on port 80).
+	7.	Choose Availability Zones
+	•	Add at least two subnets in different availability zones.
+	•	This ensures high availability.
+Step 3: Set Up Target Group
+
+	8.	Create a Target Group
+	•	Name the target group (e.g., “MyTargetGroup”).
+	•	Select the target type (usually Instance).
+	•	Define the health check protocol (e.g., HTTP on port 80).
+	9.	Register Instances
+	•	Select your EC2 instances and register them with the target group.
+Step 4: Finish Load Balancer Setup
+
+	10.	Review and Create
+	•	Review all the settings and click Create Load Balancer.
+Step 5: Test the Load Balancer
+
+	11.	Access the Load Balancer
+	•	Copy the DNS name of the load balancer (found in the Load Balancer details).
+	•	Paste it into your browser to test if it distributes traffic to your EC2 instances.
